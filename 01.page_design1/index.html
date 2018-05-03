@@ -1,0 +1,461 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+	<meta name="description" content="Some ideas for hover effects with a fancy tilt effect" />
+	<meta name="keywords" content="tilt, hover, effect, demo, inspiration, animation, template" />
+	<meta name="author" content="Codrops" />
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/pater.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<script src="js/jquery-1.9.1.min.js"></script>
+    <!--custom styles -->
+</head>
+
+<body>
+
+
+<script>
+	$(document).ready(function(){
+  $(window).scroll(function() { //윈도우에서 scroll하면
+    $(".boxBtxt").each(function (){ //.slideanim에 반복해서 실행한다
+      var pos = $(this).offset().top; //.slideanim의 꼭대기 좌표값
+      var height=$(window).height(); //window의 높이값
+         
+      var winTop = $(window).scrollTop(); //window의 스크롤이 이동한 높이값
+
+        if (pos < winTop+960) { //pos가 widTop에 600을 더한값보다 작으면
+        $(this).removeClass("slide-key-down");  //slide-key-down클래스를 삭제하고    
+        $(this).addClass("slide-key"); //slide-key클래스를 추가한다.
+        }
+        else { //아니면
+        $(this).css("visibility","visible") //.slideanim을 나타낸다.
+        $(this).addClass("slide-key-down"); //slide-key-down클래스를 추가한다.
+        $(this).removeClass("slide-key"); //slide-key클래스를 삭제한다.
+        }
+    });
+  }); 
+});
+    
+    
+      $(document).ready(function() {
+        $("#packagebox").click(function(){
+            $(".summer_1").slideDown(1000).css('display','block');
+            }); 
+        $("#close").click(function(){
+            $(".summer_1").slideUp(1000).css('display','none');
+            });
+        });
+</script>
+    <!-- Header -->
+    <!-- recommend to use this nav structure -->
+    <header class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="img/logo_fff.png" alt="logo"></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+            </div>
+
+            <div id="myNavbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="sub1/sub-notice.html">ABOUT US</a>
+                    </li>
+
+					
+                    <li>
+                        <a href="sub2/SUITES.html">Room</a>
+                    </li>
+                   
+                    <li>
+                        <a href="sub4/Facilities.html">Facilities</a>
+                    </li>
+
+					 <li>
+                        <a href="sub3/dining.html">Dining</a>
+                    </li>
+					<li>
+                        <a href="sub5/event.html">Event</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+   
+	
+	<div class="boxB">
+
+
+
+	<section class="boxB-1" id="boxBscroll">
+		<div class="B1"><img src="img/maingif.gif" /></div>
+			<div class="B1-txt boxBtxt">
+				<h1>Welcome To liberté</h1><br/>
+				<span>Together with Liberte, <br />
+				Make precious memories that you won't forget. </span>
+			</div>
+		
+	</section>
+
+	<section class="boxB-2" id="boxBscroll">
+        
+		
+		<div class="parallax-window" data-parallax="scroll" data-image-src="img/2.jpg">
+        </div>
+         
+		<main>
+			<section class="content content--c1">
+				
+				<a href="#" class="tilter tilter--1" id="packagebox">
+					<figure class="tilter__figure">
+						<img class="tilter__image" src="img/123.jpg" alt="img01" />
+						<div class="tilter__deco tilter__deco--shine"><div></div></div>
+						<figcaption class="tilter__caption">
+							<h3 class="tilter__title">SUMMER</h3>
+							<p class="tilter__description">PACKAGE ></p>
+						</figcaption>
+						<svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+							<path d="M20.5,20.5h260v375h-260V20.5z" />
+						</svg>
+					</figure>
+				</a>
+            </section>
+		</main>
+
+			<div class="summer_1">
+				<button id="close">x</button>
+				<img src="img/summerimg.png">
+			</div>
+	</section>
+
+
+	<section class="boxB-4" id="boxBscroll">
+        
+            <div class="B3-txt boxBtxt">
+				<span>Enjoy a decent vacation as a trip. </span>
+			</div>
+       
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/4.jpg">
+        </div>
+           
+			
+	</section>
+
+	<section class="boxB-5" id="boxBscroll">
+		 <div class="parallax-window" data-parallax="scroll" data-image-src="img/5.jpg">
+        </div>
+			<div class="B3-txt boxBtxt">
+				<span>Forget about your daily life<br />
+				and enjoy this moment. </span>
+			</div>
+			
+	</section>
+
+
+</div>
+
+<!-- footer 부분 -->
+<footer id="bottom">
+	<div class="foot">
+         <ul class="b_quick">
+            <li class="company"><a href="#">COMPANY</a></li>
+            <li><a href="#">CUSTOMER</a></li>
+            <li><a href="#">SERVICE</a></li>
+        </ul>
+
+        <ul id="bottom_txt">
+            <li>tel: 001.1.111.222.3333 </li>
+            <li>E-MAIL: AAAAA@BBBBBBBBBB.com</li>
+            <li>COPYRIGHT&copy;LIBERTE.COM ALL RIGHT RESERVED</li>
+        </ul>
+		<div class="sns">
+		<a href="#"><img src="img/ins.png" /></a>
+		<a href="#"><img src="img/face.png" /></a>
+		<a href="#"><img src="img/twitter.png" /></a>
+		</div>
+	</div>
+</footer>
+	
+	
+	
+	<!--<div id="hero">
+        <div class="hero-message text-center">
+            <h1>NavShrink for Bootstrap Demo</h1>
+            <p>Scroll down the page to view NavShrink in action!</p>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top:120px;">
+
+        <h1>Demo</h1>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor.</p>
+
+        <p>Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+        <p>Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2>Subheading</h2>
+
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor.</p>
+
+        <p>Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+
+    </div>
+    <!-- end container -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/navShrink.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/anime.min.js"></script>
+	<script src="js/main.js"></script>
+    <script src="js/parallax.min.js"></script>
+	<script>$('.parallax-window').parallax();//페러럭스추가하기</script>
+    <script type="text/javascript">
+        //Init the plugin
+        $(document).ready(function() {
+            
+            //enable navishrink
+            var shrinker = $('.navbar').navShrink({
+                bgInitColor: 'rgba(149,185,195,1)',
+                fadeEnable: true,
+                responsiveEnable: true
+            });
+        });
+    </script>
+
+	
+<script>
+
+//메뉴 슬라이드토글
+ $(document).ready(function() {
+$(".navbar-toggle").click(function(){
+	$(".navbar-collapse").slideToggle(1000);
+
+});
+ });
+
+	
+  </script>
+    <!--custom scripts -->
+
+	
+		<script>
+		$(document).ready(function() {
+			var tiltSettings = [
+			{},
+			{
+				movement: {
+					imgWrapper : {
+						translation : {x: 10, y: 10, z: 30},
+						rotation : {x: 0, y: -10, z: 0},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					},
+					lines : {
+						translation : {x: 10, y: 10, z: [0,70]},
+						rotation : {x: 0, y: 0, z: -2},
+						reverseAnimation : {duration : 2000, easing : 'easeOutExpo'}
+					},
+					caption : {
+						rotation : {x: 0, y: 0, z: 2},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					},
+					overlay : {
+						translation : {x: 10, y: -10, z: 0},
+						rotation : {x: 0, y: 0, z: 2},
+						reverseAnimation : {duration : 2000, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 100, y: 100, z: 0},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						rotation : {x: -5, y: 10, z: 0},
+						reverseAnimation : {duration : 900, easing : 'easeOutCubic'}
+					},
+					caption : {
+						translation : {x: 30, y: 30, z: [0,40]},
+						rotation : {x: [0,15], y: 0, z: 0},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					},
+					overlay : {
+						translation : {x: 10, y: 10, z: [0,20]},
+						reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 100, y: 100, z: 0},
+						reverseAnimation : {duration : 900, easing : 'easeOutCubic'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						rotation : {x: -5, y: 10, z: 0},
+						reverseAnimation : {duration : 50, easing : 'easeOutQuad'}
+					},
+					caption : {
+						translation : {x: 20, y: 20, z: 0},
+						reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+					},
+					overlay : {
+						translation : {x: 5, y: -5, z: 0},
+						rotation : {x: 0, y: 0, z: 6},
+						reverseAnimation : {duration : 1000, easing : 'easeOutQuad'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 50, easing : 'easeOutQuad'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						translation : {x: 0, y: -8, z: 0},
+						rotation : {x: 3, y: 3, z: 0},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					},
+					lines : {
+						translation : {x: 15, y: 15, z: [0,15]},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					},
+					overlay : {
+						translation : {x: 0, y: 8, z: 0},
+						reverseAnimation : {duration : 600, easing : 'easeOutExpo'}
+					},
+					caption : {
+						translation : {x: 10, y: -15, z: 0},
+						reverseAnimation : {duration : 900, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+					}
+				}
+			},
+			{
+				movement: {
+					lines : {
+						translation : {x: -5, y: 5, z: 0},
+						reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+					},
+					caption : {
+						translation : {x: 15, y: 15, z: 0},
+						rotation : {x: 0, y: 0, z: 3},
+						reverseAnimation : {duration : 1500, easing : 'easeOutElastic', elasticity : 700}
+					},
+					overlay : {
+						translation : {x: 15, y: -15, z: 0},
+						reverseAnimation : {duration : 500,easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 500, easing : 'easeOutExpo'}
+					}
+				}
+			},
+			{
+				movement: {
+					imgWrapper : {
+						translation : {x: 5, y: 5, z: 0},
+						reverseAnimation : {duration : 800, easing : 'easeOutQuart'}
+					},
+					caption : {
+						translation : {x: 10, y: 10, z: [0,50]},
+						reverseAnimation : {duration : 1000, easing : 'easeOutQuart'}
+					},
+					shine : {
+						translation : {x: 50, y: 50, z: 0},
+						reverseAnimation : {duration : 800, easing : 'easeOutQuart'}
+					}
+				}
+			},
+			{
+				movement: {
+					lines : {
+						translation : {x: 40, y: 40, z: 0},
+						reverseAnimation : {duration : 1500, easing : 'easeOutElastic'}
+					},
+					caption : {
+						translation : {x: 20, y: 20, z: 0},
+						rotation : {x: 0, y: 0, z: -5},
+						reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+					},
+					overlay : {
+						translation : {x: -30, y: -30, z: 0},
+						rotation : {x: 0, y: 0, z: 3},
+						reverseAnimation : {duration : 750, easing : 'easeOutExpo'}
+					},
+					shine : {
+						translation : {x: 100, y: 100, z: 0},
+						reverseAnimation : {duration : 750, easing : 'easeOutExpo'}
+					}
+				}
+			}];
+
+			function init() {
+				var idx = 0;
+				[].slice.call(document.querySelectorAll('a.tilter')).forEach(function(el, pos) { 
+					idx = pos%2 === 0 ? idx+1 : idx;
+					new TiltFx(el, tiltSettings[idx-1]);
+				});
+			}
+
+			// Preload all images.
+			imagesLoaded(document.querySelector('main'), function() {
+				document.body.classList.remove('loading');
+				init();
+			});
+
+			// REMOVE THIS!
+			// For Demo purposes only. Prevent the click event.
+			[].slice.call(document.querySelectorAll('a[href="#"]')).forEach(function(el) {
+				el.addEventListener('click', function(ev) { ev.preventDefault(); });
+			});
+
+			var pater = document.querySelector('.pater'),
+				paterSVG = pater.querySelector('.pater__svg'),
+				pathEl = paterSVG.querySelector('path'),
+				paths = {default: pathEl.getAttribute('d'), active: paterSVG.getAttribute('data-path-hover')};
+
+			pater.addEventListener('mouseenter', function() {
+				anime.remove(pathEl);
+				anime({
+					targets: pathEl,
+					d: paths.active,
+					duration: 400,
+					easing: 'easeOutQuad'
+				});
+			});
+
+			pater.addEventListener('mouseleave', function() {
+				anime.remove(pathEl);
+				anime({
+					targets: pathEl,
+					d: paths.default,
+					duration: 400,
+					easing: 'easeOutExpo'
+				});
+			});
+		})();
+		</script>
+
+</body>
+
+</html>

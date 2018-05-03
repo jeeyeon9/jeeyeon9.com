@@ -1,0 +1,69 @@
+$(function () {
+	// 메인비주얼 
+	var slider1 = $('#main_visual .slider_wrap ul').bxSlider({		
+		auto : true,
+		mode:'vertical',
+		pager : true,
+	});
+
+	$(document).on('click','#main_visual',function() {
+		slider1.stopAuto();
+		slider1.startAuto();
+	});
+	var pInterval;
+	$('.btn_store_pop').on('click',function(e){
+		e.preventDefault();
+		$('#store_pop').addClass('on');
+		clearInterval(pInterval);
+		pInterval = setTimeout(storePopClose,2000);
+	});
+	function storePopClose(){
+		$('#store_pop').removeClass('on');
+	}
+	$('#store_pop').on('click',function(e){
+		$('#store_pop').removeClass('on');
+	});
+
+/*
+	// 브랜드 스토리
+	var slider3 = $('#story .slider_wrap ul').bxSlider({		
+		auto : true,
+		pager : false,
+		slideWidth: 920,
+		maxSlides: 3,
+		moveSlides:1,
+		onSlideAfter: function(){
+			activeStory();
+		}
+	});
+	function activeStory(){
+		var cx = $(window).width()/2;
+		$('#story li').each(function (i) {				
+			var tx = $(this).offset().left;
+			if(tx>cx-800 && tx<cx+100){
+				$(this).addClass('on');
+			}else{
+				$(this).removeClass('on');
+			}
+		});
+	}
+
+	$(document).on('click','#story',function() {
+		slider3.stopAuto();
+		slider3.startAuto();
+	});
+*/
+	
+
+	$('.bubble_container').snowfall({image : '/new/images/v2/bubble.png', minSize: 40, maxSize:300, flakeCount : 25});
+
+});
+
+
+
+(function( $ ) {
+
+
+
+
+})( jQuery );

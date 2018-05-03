@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/event.css">
+			
+			<!-- 1. Link to jQuery (1.8 or later), -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+	<script src="js/jquery-1.9.1.min.js"></script>
+
+	<!--WOW-->
+	<link rel="stylesheet" href="css/animate.css">
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+
+<link rel="stylesheet" href="css/lightbox.min.css">
+
+</head>
+
+
+
+<body>
+
+<script>
+//슬라이드하면 나타나는거
+$(document).ready(function(){
+  $(window).scroll(function() { //윈도우에서 scroll하면
+    $(".summary, .headertxt, .slider, .em").each(function (){ //.slideanim에 반복해서 실행한다
+      var pos = $(this).offset().top; //.slideanim의 꼭대기 좌표값
+      var height=$(window).height(); //window의 높이값
+         
+      var winTop = $(window).scrollTop(); //window의 스크롤이 이동한 높이값
+
+        if (pos < winTop+960) { //pos가 widTop에 600을 더한값보다 작으면
+        $(this).removeClass("slide-key-down");  //slide-key-down클래스를 삭제하고    
+        $(this).addClass("slide-key"); //slide-key클래스를 추가한다.
+        }
+        else { //아니면
+        $(this).css("visibility","visible") //.slideanim을 나타낸다.
+        $(this).addClass("slide-key-down"); //slide-key-down클래스를 추가한다.
+        $(this).removeClass("slide-key"); //slide-key클래스를 삭제한다.
+        }
+    });
+  }); 
+});
+</script>
+
+    <!-- Header -->
+    <!-- recommend to use this nav structure -->
+    <header class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="../index.html"><img src="img/logo_fff.png" alt="logo"></a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+            </div>
+
+            <div id="myNavbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                     <li>
+                        <a href="../sub1/sub-notice.html">ABOUT US</a>
+                    </li>
+                    <li>
+                        <a href="../sub2/SUITES.html">Room</a>
+                    </li>
+              
+                    <li>
+                        <a href="../sub4/Facilities.html">Facilities</a>
+                    </li>
+
+					 <li>
+                        <a href="../sub3/dining.html">Dining</a>
+                    </li>
+					<li>
+                        <a href="../sub5/event.html">Event</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+<div class="allheader">
+<img src="img/hot.png" class="wow fadeIn" data-wow-delay=".3s">
+<div class="headerimg" >
+	<img src="img/02.jpg" />
+</div>
+</div>
+
+<section class="boxA">
+	<div class="headertxt">
+		<h1>· SUMMER PACKAGE ·</h1>
+	</div>
+
+<!-- Start WOWSlider.com BODY section -->
+<div class="slider">
+<div id="wowslider-container1">
+	<div class="ws_images">
+		<ul>
+			<li><img src="data1/images/fire.jpg" alt="FIREWORKS" title="FIREWORKS" id="wows1_0"/></li>
+			<li><img src="data1/images/flower.jpg" alt="FLOWERCLASS" title="FLOWERCLASS" id="wows1_1"/></li>
+			<li><a href="http://wowslider.net"><img src="data1/images/sns.jpg" alt="slider jquery" title="SNS EVENT" id="wows1_2"/></a></li>
+			<li><img src="data1/images/spa.jpg" alt="SPA SALE" title="SPA SALE" id="wows1_3"/></li>
+		</ul>
+	</div>
+	<div class="ws_bullets">
+		<div>
+			<a href="#" title="FIREWORKS"><span><img src="data1/tooltips/fire.jpg" alt="FIREWORKS"/>1</span></a>
+			<a href="#" title="FLOWERCLASS"><span><img src="data1/tooltips/flower.jpg" alt="FLOWERCLASS"/>2</span></a>
+			<a href="#" title="SNS EVENT"><span><img src="data1/tooltips/sns.jpg" alt="SNS EVENT"/>3</span></a>
+			<a href="#" title="SPA SALE"><span><img src="data1/tooltips/spa.jpg" alt="SPA SALE"/>4</span></a>
+		</div>
+	</div>
+	<div class="ws_script" style="position:absolute;left:-99%">
+		<a href="http://wowslider.net">jquery carousel</a> 
+		by WOWSlider.com v8.8
+	</div>
+	<div class="ws_shadow"></div>
+</div>
+</div>
+
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+
+	 <div class="em">
+		<div class="em_1">All</div>
+		<div class="em_1">Membership</div>
+		<div class="em_1">Point</div>
+	 </div>
+
+	
+	
+	<!--라이트박스-->
+		<div class="boxA-1">
+			
+			<article class="summary" id="summary_1">
+			<a href="img/flower_sbox.jpg" data-lightbox="image-1" data-title="My caption">
+				<img src="img/flower_s.jpg" alt="" class="img-responsive">
+				<h1>Flower Class</h1>
+				<p>There was a farmer who had a dog
+				<br/>and Bingo was his name</p>
+			</a>
+			</article>
+
+			<article class="summary" id="summary_2">
+			<a href="img/fire_sbox.jpg" data-lightbox="image-1" data-title="My caption">
+				<img src="img/fire_s.jpg" alt="" class="img-responsive">
+				<h1>fireworks</h1>
+				<p>There was a farmer who had a dog
+				<br/>and Bingo was his name</p>
+			</a>
+			</article>
+
+			<article class="summary" id="summary">
+			<a href="img/spa_sbox.jpg" data-lightbox="image-1" data-title="My caption">
+				<img src="img/spa_s.jpg" alt="" class="img-responsive">
+				<h1>spa sale</h1>
+				<p>There was a farmer who had a dog
+				<br/>and Bingo was his name</p>
+			</a>
+			</article>
+
+			<article class="summary" id="summary">
+			<a href="img/sns_sbox.jpg" data-lightbox="image-1" data-title="My caption">
+				<img src="img/sns_s.jpg" alt="" class="img-responsive">
+				<h1>SNS Event</h1>
+				<p>There was a farmer who had a dog
+				<br/>and Bingo was his name</p>
+			</a>
+			</article>
+		</div>
+</section>
+
+<!-- © -->
+
+
+
+<!-- footer 부분 -->
+
+<footer id="bottom">
+	<div class="foot">
+         <ul class="b_quick">
+            <li class="company"><a href="#">COMPANY</a></li>
+            <li><a href="#">CUSTOMER</a></li>
+            <li><a href="#">SERVICE</a></li>
+        </ul>
+
+        <ul id="bottom_txt">
+            <li>tel: 001.1.111.222.3333 </li>
+            <li>E-MAIL: AAAAA@BBBBBBBBBB.com</li>
+            <li>COPYRIGHT&copy;LIBERTE.COM ALL RIGHT RESERVED</li>
+        </ul>
+		<div class="sns">
+		<a href="#"><img src="img/ins.png" /></a>
+		<a href="#"><img src="img/face.png" /></a>
+		<a href="#"><img src="img/twitter.png" /></a>
+		</div>
+	</div>
+</footer>
+
+
+    <!-- end container -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/navShrink.min.js"></script>
+   
+	<script type="text/javascript">
+        //Init the plugin
+        $(document).ready(function() {
+            
+            //enable navishrink
+            var shrinker = $('.navbar').navShrink({
+                bgInitColor: 'rgba(149,185,195,1)',
+                fadeEnable: true,
+                responsiveEnable: true
+            });
+        });
+ $(document).ready(function() {
+$(".navbar-toggle").click(function(){
+	$(".navbar-collapse").slideToggle(1000);
+
+});
+ });
+</script>
+
+<script src="js/lightbox.js"></script>
+
+<script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+</body>
+</html>

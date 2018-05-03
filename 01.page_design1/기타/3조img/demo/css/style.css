@@ -1,0 +1,211 @@
+@charset="UTF-8"
+
+body {
+margin:0;
+}
+
+html{
+font-family: 'Julius Sans One', sans-serif;
+}
+
+* {
+margin:0; 
+padding:0;
+}
+
+li {
+list-style:none;
+}
+
+a {
+text-decoration:none;
+}
+
+/* header 부분 */
+
+.boxA {
+width:100%;
+margin:0 auto;
+height:100px;
+border:1px solid red;
+}
+
+.boxA h1 img {
+width:150px;
+display:block;
+margin:0 auto;
+
+padding:20px 60px 20px 20px;
+}
+
+/* nav 부분 */
+
+.menu {
+background:#455464;
+width:100%;
+height:50px;
+}
+
+.menu ul li {
+float:left;
+display:block;
+padding:15px;
+width:100px;
+}
+
+.menu ul {
+margin:0 auto;
+width:650px;
+}
+
+.menu:after {
+clear:both;
+display:block;
+content:"";
+}
+
+.menu li a {
+color:#fff;
+text-align:center;
+}
+
+/* menu-toggle 부분 */
+
+.menu-toggle {
+display:none;
+}
+
+/* 첫번째 section 부분 */
+
+.boxB-1 {
+border:1px solid red;
+height:700px;
+width:100%;
+}
+
+.B1 img {
+width:100%;
+height:810px;
+}
+
+
+
+/* 두번째 section 부분 */
+
+.boxB-2 {
+border:1px solid red;
+height:700px;
+width:100%;
+}
+
+.boxB-3 {
+border:1px solid red;
+height:700px;
+width:100%;
+}
+
+.boxB-4 {
+border:1px solid red;
+height:700px;
+width:100%;
+}
+
+.boxB-5 {
+border:1px solid red;
+height:700px;
+width:100%;
+}
+
+.boxB-1, .boxB-2, .boxB-3, .boxB-4, .boxB-5 {
+position:relative;
+}
+
+.B1-txt, .B2-txt, .B3-txt, .B4-txt, .B5-txt {
+position:absolute;
+left:300px;
+top:200px;
+}
+
+.B1-txt h1{
+font-size:70px;
+}
+
+.B1-txt span{
+font-size:30px;
+}
+
+.B1-txt p{
+font-size:30px;
+}
+
+.B2-txt h1{
+font-size:40px;
+}
+
+.B2-txt span, .B2-txt p{
+font-size:20px;
+}
+
+footer {
+border:1px solid red;
+width:100%;
+height:50px;
+}
+
+
+
+
+
+
+/* 미디어쿼리 설정해야함 */
+
+
+	
+@media screen and (max-width:1900px){
+	
+	
+	
+}
+
+@media screen and (max-width:1280px){
+	#container{overflow:hidden;}
+	.menu{display:block;}
+	#content{width:100%; float:none;}
+	
+	#top-nav>ul>li>a{font-size:0.75em; }
+	
+}
+@media screen and (max-width:1200px){
+	#top-nav{padding-top:0.5%;}
+	#top-nav>ul>li{width:12%; margin-left:6%; }
+	#top-nav>ul>li>a{padding:7% 5%;}
+}
+@media screen and (max-width:830px){
+	#top-nav>ul>li>a{font-size:0.75em;}
+	#top-nav>ul>li{width:15%; margin-left:4%;}
+}
+@media screen and (max-width:768px){
+	#side-A{display:none;}
+	#side-B{display:none;}
+	#wrap{width:100%;}
+
+	/* 2단 4행*/
+	#list>li{width:40%; margin-left:6%;}
+	/* 2단 5행*/
+}
+@media screen and (max-width:550px){
+	.nav-icon{display:block;}
+	#top{position:fixed;}
+	#top-nav{position:absolute; top:0; z-index:20; display:none; height:auto; padding-bottom:10px; background:rgba(255,255,255,0.5); }
+	#top-nav>ul{}
+	#top-nav>ul>li{width:90%; margin-bottom:10px;  }
+	#top-nav>ul>li:first-child{margin-bottom:0;}
+	
+	#top-nav>ul>li>a{background:rgba(200,3,20,0.5); box-shadow:0 0 5px 2px black; font-size:1em; padding-top:5px; padding-bottom:5px;}
+}
+@media screen and (max-width:360px){
+		/* 기본 네비 숨김 */
+	
+	
+	#list>li{width:90%;}
+}

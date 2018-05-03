@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang='ko'>
+<head>
+<link rel="canonical" href="#">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name='viewport' content='width=1620,user-scalable=yes, target-densitydpi=device-dpi'>
+<title>톡스앤필의원</title>
+
+<link rel='stylesheet' href='css/style.css' media='all' />
+<link rel='stylesheet' href='css/jquery.bxslider.css' media='all' />
+
+<script src='js/jquery-1.12.4.min.js'></script>
+<script src='js/jquery.bxslider.min.js'></script>
+<script src="js/custom.js"></script>
+<script src='js/main.js'></script><!-- 메인관련(버블모션) -->
+<script src='js/snowfall.jquery.min.js'></script><!-- 메인관련(버블모션) -->
+    <script src='js/smoothscroll.js'></script><!-- 스크롤 -->
+<script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;0
+      }
+    }
+  });
+});
+</script>
+
+</head>
+
+<body>
+    <header>
+            <div id="gnb">
+            <h1><a href="index.html"><img src="images/logo.png"/></a></h1>
+                <div id="gnb_top">
+                    <p><span>공지</span><span>후기</span><span>이벤트</span></p>
+                    <p><span>HOME</span><span>LOGIN</span><span>JOIN</span></p>
+                </div>
+            <ul id="gnbopen">
+                <li><a href="#">톡스앤필뷰티그룹</a>
+                    <ul class="subgnb">
+                            <li><a href="#">의료진안내</a></li>
+                            <li><a href="#">닥터칼럼</a></li>
+                            <li><a href="#">학술활동</a></li>
+                            <li><a href="#">지점소개/오시는길</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">보톡스</a>
+                <ul class="subgnb">
+                            <li><a href="#">보톡스란?</a></li>
+                            <li><a href="#">사각턱보톡스</a></li>
+                            <li><a href="#">주름보톡스</a></li>
+                            <li><a href="#">리프팅보톡스</a></li>
+                            <li><a href="#">종아리보톡스</a></li>
+                            <li><a href="#">승모근보톡스</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">스페셜클리닉</a>
+                <ul class="subgnb">
+                            <li><a href="#">마이다스리프팅</a></li>
+                            <li><a href="#">오메가리프팅</a></li>
+                            <li><a href="#">윤곽주사</a></li>
+                            <li><a href="#">물광주사</a></li>
+                            <li><a href="#">지방이식</a></li>
+                            <li><a href="#">도트필</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">피부클리닉</a>
+                <ul class="subgnb">
+                            <li><a href="#">여드름/여드름흉터</a></li>
+                            <li><a href="#">기미/주근깨/잡티</a></li>
+                            <li><a href="#">모공/블랙헤드</a></li>
+                            <li><a href="#">주름/탄력/리프팅</a></li>
+                            <li><a href="#">켈로이드/튼살/문신제거</a></li>
+                            <li><a href="#">부위별 제모</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">바디클리닉</a>
+                <ul class="subgnb">
+                            <li><a href="#">카복시</a></li>
+                            <li><a href="#">중저주파</a></li>
+                            <li><a href="#">엔도몰로지</a></li>
+                            <li><a href="#">미니지방흡입</a></li>
+                            <li><a href="#">바디톡신</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">필러</a>
+                 <ul class="subgnb">
+                           <li><a href="#">필러란?</a></li>
+                            <li><a href="#">코필러</a></li>
+                            <li><a href="#">턱끝/무턱</a></li>
+                            <li><a href="#">이마/볼/입술</a></li>
+                            <li><a href="#">풀페이스필러</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">레이저클리닉</a>
+                <ul class="subgnb">
+                            <li><a href="#">울쎄라</a></li>
+                            <li><a href="#">써마지CPT</a></li>
+                            <li><a href="#">레이저토닝</a></li>
+                            <li><a href="#">인트라셀</a></li>
+                            <li><a href="#">CO2레이저</a></li>
+                            <li><a href="#">셀라스</a></li>
+                        </ul>
+                </li>
+                <li><a href="#">커뮤니티</a></li>
+            </ul>
+            </div>
+           <!-- <div id="gnblist">
+                <ul>
+                    <li>
+                        <ul>
+                            <li><a href="#">의료진안내</a></li>
+                            <li><a href="#">닥터칼럼</a></li>
+                            <li><a href="#">학술활동</a></li>
+                            <li><a href="#">지점소개/오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">보톡스란?</a></li>
+                            <li><a href="#">사각턱보톡스</a></li>
+                            <li><a href="#">주름보톡스</a></li>
+                            <li><a href="#">리프팅보톡스</a></li>
+                            <li><a href="#">종아리보톡스</a></li>
+                            <li><a href="#">승모근보톡스</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">마이다스리프팅</a></li>
+                            <li><a href="#">오메가리프팅</a></li>
+                            <li><a href="#">윤곽주사</a></li>
+                            <li><a href="#">물광주사</a></li>
+                            <li><a href="#">지방이식</a></li>
+                            <li><a href="#">도트필</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">여드름/여드름흉터</a></li>
+                            <li><a href="#">기미/주근깨/잡티</a></li>
+                            <li><a href="#">모공/블랙헤드</a></li>
+                            <li><a href="#">주름/탄력/리프팅</a></li>
+                            <li><a href="#">켈로이드/튼살/문신제거</a></li>
+                            <li><a href="#">부위별 제모</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">카복시</a></li>
+                            <li><a href="#">중저주파</a></li>
+                            <li><a href="#">엔도몰로지</a></li>
+                            <li><a href="#">미니지방흡입</a></li>
+                            <li><a href="#">바디톡신</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                           <li><a href="#">필러란?</a></li>
+                            <li><a href="#">코필러</a></li>
+                            <li><a href="#">턱끝/무턱</a></li>
+                            <li><a href="#">이마/볼/입술</a></li>
+                            <li><a href="#">풀페이스필러</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">울쎄라</a></li>
+                            <li><a href="#">써마지CPT</a></li>
+                            <li><a href="#">레이저토닝</a></li>
+                            <li><a href="#">인트라셀</a></li>
+                            <li><a href="#">CO2레이저</a></li>
+                            <li><a href="#">셀라스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>-->
+        
+    </header>
+    
+    
+<div id="main" class="main">
+        <div class="main_intro">
+            <img src="images/main_intro01.jpg"/>
+            <div id="contact">
+                <ul>
+                    <li><a href="#"><img src="images/main_infor01.png"/></a></li>
+                    <li><a href="#"><img src="images/main_infor02.png"/></a></li>
+                    <li><a href="#"><img src="images/main_infor03.png"/></a></li>
+                </ul>
+            </div>
+            <div class="scrollbtn">
+                <a href="#banner_wrap_start" class="smoothScroll btn btn-default">∨</a>
+            </div>
+
+
+        </div>
+    
+		<div class="banner_wrap" id="banner_wrap_start">
+            <h1>PETIT CLINIC</h1>
+			<div class="bubble_container"></div>
+			<!-- main_visual -->
+			
+			<div id="main_visual">
+                
+				<div class="slider_wrap">
+					<ul>
+						<li><a href="#"><img src="images/seemore01.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/seemore02.jpg" alt=""/></a></li>
+						<li><a href="#"><img src="images/seemore03.jpg" alt=""/></a></li>
+					</ul>			
+				</div>
+			</div>
+            
+			<!-- //main_visual -->
+		</div>
+    </div>
+        <div class="box1">
+            
+            
+            <div id="wedding">
+               
+                <div class="weddingimg">
+                    <img src="images/wedding01.jpg"> 
+                </div>
+                
+                <div class="weddingtxt">
+                   <b>M&nbsp;&nbsp; e&nbsp;&nbsp; d&nbsp;&nbsp; i&nbsp;&nbsp; c&nbsp;&nbsp; a&nbsp;&nbsp; l&nbsp;&nbsp; W&nbsp;&nbsp; e&nbsp;&nbsp; d&nbsp;&nbsp; d&nbsp;&nbsp; i&nbsp;&nbsp; n&nbsp;&nbsp; g&nbsp;&nbsp; P&nbsp;&nbsp; r&nbsp;&nbsp; o&nbsp;&nbsp; g&nbsp;&nbsp; r&nbsp;&nbsp; a&nbsp;&nbsp; m</b>
+                    <hr>
+                    <h1>Wedding Care</h1>
+                        
+                        <p>'아름다움의 시작이자 완성은 깨끗하고 아름다운 피부'라는 말이 있듯이
+                            결혼식 주인공인 신랑, 신부의 웨딩케어야말로 가장 중요한 결혼준비 항목입니다.
+                            결혼 예정일까지 남은 일정 동안, 피부타입별 진단과 함께 피부 고민을 해결해 줄 수 있는
+                            톡스앤필 메디컬 웨딩 컨설팅이 전문 상담자와 함께 진행됩니다.</p>
+                        <div>상담예약</div>
+                </div>
+                
+            </div>
+            <div id="page_1">
+                 <ul>
+                <li><a href="#"><img src="images/clinic_01.jpg"/><div class="upup"></div></a></li>
+                <li><a href="#"><img src="images/clinic_02.jpg"/><div class="upup"></div></a></li>
+                <li><a href="#"><img src="images/clinic_03.jpg"/><div class="upup"></div></a></li>
+                </ul>
+            </div>
+            <div id="page_1">
+                 <ul>
+                <li><a href="#"><img src="images/clinic_04.jpg"/><div class="upup"></div></a></li>
+                <li><a href="#"><img src="images/clinic_05.jpg"/><div class="upup"></div></a></li>
+                <li><a href="#"><img src="images/clinic_06.jpg"/><div class="upup"></div></a></li>
+                </ul>
+            </div>
+            </div>
+    <div id="insta" styel="height:600px;">
+                <h1><img src="images/instagram_PNG.png"/></h1>
+                 <p>#toxnfill</p>
+                <img src="images/insta_cont.jpg"/>
+            </div>
+    
+		<div id="main_info">
+			<ul>
+				<li class="s01">
+					<a href="#"><img src="images/txt_review.png">
+						<span>예뻐진 여자들의 뷰티톡톡</span>
+					</a>
+				</li>
+				<li class="s02">
+					<a href="#"><img src="images/txt_talk.png">
+						<span>@클리닉 강남2호점</span>
+					</a>
+				</li>
+				<li class="s03">
+					<a href="#"><img src="images/txt_location.png">
+						<span>강남역 10번출구</span>
+					</a>
+				</li>
+				<li class="s04">
+					<img src="images/txt_tell.png">
+					<span> 강남본점</span>
+					
+				</li>
+			</ul>			
+		</div>
+    <div id="main_consult">
+			<div class="inwrap">
+				<a href="#" class="btn_talk"><img src="images/btn_talk.gif" alt=""></a>
+				<form action="#" method="post" enctype="multipart/form-data" name="wform" onsubmit="return counselSubmit()">
+					<fieldset>
+						<input type="hidden" name="tblType" value="main">						
+						<label for="tblStrName" class="sound_only"></label>
+						<input type="text" name="tblStrName" id="tblStrName" placeholder="이름">
+						<label for="tblStrMobile" class="sound_only"></label>
+						<input type="text" name="tblStrMobile" id="tblStrMobile" placeholder="연락처">								
+						<p class="agree">
+							<input type="checkbox" id="agree_chk0"> <label for="agree_chk0">개인정보 수집동의</label> 각종 서비스 및 이벤트 공지, 상담을 위한 개인정보수집 동의 <a href="#">[자세히보기]</a>
+						</p>
+					</fieldset>
+					<input type="image" src="images/btn_submit.png" alt="">
+				</form>
+			</div>
+		</div>
+<div>
+     <div id="menu_list">
+         <h1 id="map"> NETWORK </h1>
+				<p>
+					<a href="#">강남본점<span>Gangnam</span></a>
+					<a href="#">압구정점<span>Apgujeong</span></a>
+					<a href="#">청담점<span>Cheongdam</span></a>
+					<a href="#">분당점<span>Bundang</span></a>
+                    <a href="#">관악서울대입구점<span>Seoul University</span></a>
+                    <a href="#">명동점<span>Myeong-dong</span></a>
+                    <a href="#">인천부평점<span>Bupyeong</span></a>
+                    <a href="#">노원점<span>Nowon</span></a>
+                    <a href="#">인계점<span>Inegye</span></a>
+                    <a href="#">천호점<span>Cheongho</span></a>
+				</p>
+				<p>
+					<a href="#">건대점<span>Konkuk</span></a>
+					<a href="#">홍대신촌점<span>Hongdae</span></a>
+					<a href="#">신논현점<span>Sinnonhyeon</span></a>
+					<a href="#">영등포점<span>Yeongdeungpo</span></a>
+                    <a href="#">이수점<span>Isu</span></a>
+                    <a href="#">구리점<span>guli</span></a>
+                    <a href="#">일산 정발산역점<span>Il-san</span></a>
+                    <a href="#">안산점<span>Ansan</span></a>
+                    <a href="#">인천 구월점<span>Incheon</span></a>
+                    <a href="#">안양점<span>Anyang</span></a>
+                    <a href="#">송파점<span>Songwha</span></a>
+				</p>
+            </div>
+    <!-- store 페이지 -->
+<div id="store" data-name="store">
+		
+		<!-- 구글 map -->
+			<div id="iii">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3573840012086!2d127.02408361530975!3d37.499488279810436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd30b188a7a756dbf!2z64yA64-Z67mM65Sp!5e0!3m2!1sko!2skr!4v1521816338957" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		
+		<!-- contact 폼 부분 -->
+			<div class="contact">
+                <p><span>본사 위치</span><br/><br/>서울특별시 서초구 강남대로 415(서초동 1306-8) 대동빌딩 10층,11층<br/>
+                        2호선 강남역 10번출구 전방 50m</p><br/><br/>
+			    <p><span>KAKAO TALK</span><br/><br/>gnblsclinic</p><br/><br/>
+                <p><span>MOBILE SNS</span><br/><br/>010.9025.4842</p><br/><br/>
+		      </div>
+    
+</div>
+</div>
+
+
+
+<footer>
+<!-- COPYRIGHT  -->
+<div id="main_step">
+    <div class="tsns">
+        <a href="#"><span class="roll_sns"></span><img src="images/sns01.png" alt="온라인상담" /></a>
+        <a href="#"><span class="roll_sns"></span><img src="images/sns02.png" alt="온라인예약" /></a>
+        <a href="#"><span class="roll_sns"></span><img src="images/sns03.png" alt="오시는길" /></a>
+    </div>
+</div>
+
+<!-- FOOT  -->
+<div id="foot">
+    
+	<div class="copyright">
+       
+        <address>
+			<p>
+                상호명 : 톡스앤필의원
+                <span class="space"></span>
+                대표자 : 구지연
+                <span class="space"></span>
+                사업자등록번호 : 88-00000-0000
+                <span class="space"></span>
+                전화 : 0000-0000<span class="space"></span>
+                주소 : 서울특별시 서초구 강남대로 415(서초동 1306-8) 대동빌딩 10층,11층
+			<p class="copyright" style="text-align: center;">
+				Copyright @ 2017-2018 gujeeyeon All rights reserved.
+			</p>
+		</address>
+	</div>
+</div>
+</footer>
+
+<!--마우스가 올라가면 제품정보가 나타난다-->
+<script>
+    $(function(){
+        $(".upup").css('display','none');
+	       $("#page_1 ul li").on({
+                mouseenter:function(){
+                $(".upup",this).fadeIn(300);
+                },
+                mouseleave:function(){
+                $(".upup",this).fadeOut();
+                }
+            });  
+    }); 
+</script>
+
+</body>
+</html>

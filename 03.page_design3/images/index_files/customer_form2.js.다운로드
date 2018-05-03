@@ -1,0 +1,147 @@
+function loading_field() {
+	$.post("/loading_counselField.php", { tblIntField1:$('#tblIntField1').val()},function(data,state) {
+		var optionHtml = '';
+		for(var i=0; i<data.field.length; i++) {
+			optionHtml += '<option value="'+ data.field[i] +'">'+ data.field_name[i] +'</option>';
+		}
+		title = '<option value="">선택하여 주세요</option>';
+		$("#tblIntField2 option").remove();
+		$('#tblIntField2').append(title+optionHtml);
+	});
+}
+function loading_field2() {
+    $.post("/loading_counselField.php", { tblIntField1:$('#IntField1').val()},function(data,state) {
+        var optionHtml = '';
+        for(var i=0; i<data.field.length; i++) {
+            optionHtml += '<option value="'+ data.field[i] +'">'+ data.field_name[i] +'</option>';
+        }
+        title = '<option value="">선택하여 주세요</option>';
+        $("#IntField2 option").remove();
+        $('#IntField2').append(title+optionHtml);
+    });
+}
+
+function counselSubmit() {
+	if (!$.trim($('#tblStrName').val()))
+	{
+		alert('성명은 필수항목입니다.');
+		$('#tblStrName').focus();
+		return false;
+	}
+	if (!$.trim($('#tblStrMobile').val()))
+	{
+		alert('핸드폰 번호는 필수항목입니다.');
+		$('#tblStrMobile').focus();
+		return false;
+	}
+	/*
+	if (!$('#tblIntField1').val())
+	{
+		alert('상담부위는 필수항목입니다.');
+		$('#tblIntField1').focus();
+		return false;
+	}
+	if (!$('#tblIntField2').val())
+	{
+		alert('상담부위는 필수항목입니다.');
+		$('#tblIntField2').focus();
+		return false;
+	}
+	*/
+}
+function counselCostSubmit(){
+	if (!$.trim($('#cost_name').val()))
+	{
+		alert('성명은 필수항목입니다.');
+		$('#cost_name').focus();
+		return false;
+	}
+	if (!$.trim($('#cost_tel').val()))
+	{
+		alert('핸드폰 번호는 필수항목입니다.');
+		$('#cost_tel').focus();
+		return false;
+	}
+	if ($('#agree_chk2').is(":checked") == false)
+	{
+		alert('개인정보 수집·이용 동의하셔야 합니다.');
+		return false;
+	}	
+}
+function counselTalkSubmit(){
+	if (!$.trim($('#talk_name').val()))
+	{
+		alert('성명은 필수항목입니다.');
+		$('#talk_name').focus();
+		return false;
+	}
+	if (!$.trim($('#talk_tel').val()))
+	{
+		alert('핸드폰 번호는 필수항목입니다.');
+		$('#talk_tel').focus();
+		return false;
+	}
+	if (!$.trim($('#talk_id').val()))
+	{
+		alert('카톡아이디는 필수항목입니다.');
+		$('#talk_id').focus();
+		return false;
+	}
+	if ($('#agree_chk1').is(":checked") == false)
+	{
+		alert('개인정보 수집·이용 동의하셔야 합니다.');
+		return false;
+	}
+}
+function popupcounselSubmit() {
+    if (!$.trim($('#name').val()))
+    {
+        alert('성명은 필수항목입니다.');
+        $('#name').focus();
+        return false;
+    }
+    if (!$.trim($('#tel').val()))
+    {
+        alert('핸드폰 번호는 필수항목입니다.');
+        $('#tel').focus();
+        return false;
+    }
+    if (!$('#IntField1').val())
+    {
+        alert('상담부위는 필수항목입니다.');
+        $('#IntField1').focus();
+        return false;
+    }
+    if (!$('#IntField2').val())
+    {
+        alert('상담부위는 필수항목입니다.');
+        $('#IntField2').focus();
+        return false;
+    }
+    if ($('#agree_chk').is(":checked") == false)
+    {
+        alert('개인정보수집 동의에 체크는 필수 항목입니다.');
+        return false;
+    }
+
+}
+
+function kakaoSubmit() {
+	if ($('#agree').is(":checked") == false)
+	{
+		alert('개인정보 수집·이용 동의하셔야 합니다.');
+		return false;
+	}
+	if (!$.trim($('#tblStrName').val()))
+	{
+		alert('성명은 필수항목입니다.');
+		$('#tblStrName').focus();
+		return false;
+	}
+	if (!$.trim($('#tblStrMobile').val()))
+	{
+		alert('핸드폰 번호는 필수항목입니다.');
+		$('#tblStrMobile').focus();
+		return false;
+	}
+}

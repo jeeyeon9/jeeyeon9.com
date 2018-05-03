@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1200">
+<title>casamia</title>
+<link rel="stylesheet" href="css/style.css">
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="css/swiper.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/vmc.slider.full.js"></script>
+
+<script>
+    $(document).ready(function(){
+    });
+</script>
+<script>
+     //팝업창
+ $(function(){
+    $("#draggable").draggable();
+    $("#close").click(function(){
+        $("#draggable").hide();               
+      });
+  });
+</script>    
+    
+    
+    
+</head>
+
+<body>
+
+<!--팝업영역-->
+<div id="draggable">
+<img src="img/popup.png">
+<button id="close">x</button>
+</div>
+<!--팝업영역 끝-->
+     
+<article id="wrap" class="main">
+	<!-- haeder -->
+	<header id="header">
+	<div class="inner_header">
+        
+		<div class="top_area">
+			<div class="inner">
+				<h1 class="logo">
+					<a href="index.html">
+						<img src="img/top_logo.png" alt="logo">
+					</a>
+				</h1>
+                <form>
+                    <span class="searchInput">
+                    <input type="text" id="find_keyword" title="검색어 입력" value="" >
+                    <img src="img/icon_search.png" alt="돋보기아이콘"></span>
+                </form>
+				<nav class="sns">
+					<ul>
+						<li>
+							<a href="https://www.facebook.com/" target="_blank">
+								<img src="img/icon_facebook.png" alt="FACEBOOK">
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/" target="_blank">
+								<img src="img/icon_twitter.png" alt="TWITTER">
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/" target="_blank">
+								<img src="img/icon_instgram.png" alt="INSTAGRAM">
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+
+		<div class="menu_area">
+			<div class="inner">
+			
+				<nav id="gnb">
+					<div class="gnb_wrap">
+						<ul>
+							<li class="gnb_depth1 gnb_store">
+								<div class="gnb_main">
+									<a href="#">
+										<span>STORE</span>
+									</a>
+								</div>
+								<ul class="gnb_sub">
+									<li class="gnb_depth2">
+										<a href="#">
+											<span>NEW</span>
+										</a>
+									</li>
+									<li class="gnb_depth2">
+										<a href="#">
+											<span>HOT</span>
+										</a>
+									</li>
+									<li class="gnb_depth2">
+										<a href="#">
+											<span>STEADY SELLER</span>
+										</a>
+									</li>
+									<li class="gnb_depth2">
+										<a href="#">
+											<span>ALL THINGS</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnb_depth1 gnb_event">
+								<div class="gnb_main">
+									<a href="#">
+										<span>EVENT</span>
+									</a>
+								</div>
+								<ul class="gnb_sub">
+									<li class="gnb_depth2">
+										<a href="#">
+											<span>진행중이벤트</span>
+										</a>
+									</li>
+									<li class="gnb_depth2">
+										<a href="#">
+											<span>당첨자발표</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnb_depth1 gnb_post">
+								<div class="gnb_main">
+									<a href="#">
+										<span>MAGAZINE</span>
+									</a>
+								</div>
+								<ul class="gnb_sub">
+									<li class="gnb_depth2">
+										<a href="#">
+											<span>NEWS</span>
+										</a>
+									</li>
+									<li class="gnb_depth2">
+										<a href="#">
+											<span>POST</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnb_depth1 gnb_about">
+								<div class="gnb_main">
+									<a href="#">
+										<span>ABOUT</span>
+									</a>
+								</div>
+								<ul class="gnb_sub">
+									<li class="gnb_depth2">
+										<a href="#">
+											<span>공지사항</span>
+										</a>
+									</li>
+									<li class="gnb_depth2">
+										<a href="#">
+											<span>보도자료</span>
+										</a>
+									</li>
+									<li class="gnb_depth2">
+										<a href="#">
+											<span>채용정보</span>
+										</a>
+									</li>
+									<li class="gnb_depth2">
+										<a href="#">
+											<span>Contact Us</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+                        <div id="innerback"><img src="img/gnbback.jpg" /></div>
+					</div>
+				</nav>
+			</div>
+            
+		</div>
+
+
+</div>
+
+</header>
+
+    <!-- 본문영역 -->
+    <section>
+       <div class="content">
+		<div id="slider">
+			<a href="#"><img src="./img/bench1.jpg"/></a>
+			<a href="#"><img src="./img/bench2.jpg"/></a>
+			<a href="#"><img src="./img/bench3.jpg"/></a>
+		</div>
+	</div>
+        
+        
+        <div class="sidebar">
+            <ul>
+                <li><a href="#"><img src="img/sidebar/01.png" alt="메뉴" class="-opa"/><p>SEARCH</p></a></li>
+                <li><a href="#"><img src="img/sidebar/02.png" alt="메뉴" class="-opa"/><p>JOIN</p></a></li>
+                <li><a href="#"><img src="img/sidebar/03.png" alt="메뉴" class="-opa"/><p>LOG IN</p></a></li>
+                <li><a href="#"><img src="img/sidebar/05.png" alt="메뉴" class="-opa"/><p>HOME</p></a></li>
+                <li><a href="#"><img src="img/sidebar/06.png" alt="메뉴" class="-opa"/><span>0</span><p>CART</p></a></li>
+                <li><a href="#"><img src="img/sidebar/07.png" alt="메뉴" class="-opa"/><p>MY PAGE</p></a></li>
+                <li><a href="#"><img src="img/sidebar/08.png" alt="메뉴" class="-opa"/><p>INSTA GRAM</p></a></li>
+                <li><a href="#"><img src="img/sidebar/09.png" alt="메뉴" class="-opa"/><p>CS CENTER</p></a></li>
+                <li><a href="#"><img src="img/sidebar/10.png" alt="메뉴" class="-opa"/><p>TOP</p></a></li>
+            </ul><!-- HOME ~ INSTAGRAM -->
+        </div>
+        <div class="iconmenuwrap">
+	       <div class="iconmenu">
+                <ul class="iconul">
+                    <li><a href="#"><img src="img/iconmenu/01.png" alt="매장소개"/><span>매장소개</span></a></li>
+                    <li><a href="#"><img src="img/iconmenu/02.png" alt="공지사항"/><span>공지사항</span></a></li>
+                    <li><a href="#"><img src="img/iconmenu/03.png" alt="포토리뷰"/><span>포토리뷰</span></a></li>
+                    <li><a href="#"><img src="img/iconmenu/04.png" alt="고객센터"/><span>고객센터</span></a></li>
+                    <li><a href="#"><img src="img/iconmenu/05.png" alt="개인결제창"/><span>개인결제창</span></a></li>
+                    <li><a href="#"><img src="img/iconmenu/06.png" alt="이벤트"/><span>이벤트</span></a></li>
+                    <li><a href="#"><img src="img/iconmenu/07.png" alt="인스타그램"/><span>인스타그램</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="boxB">
+            <h2>N&nbsp;E&nbsp;W&nbsp; &nbsp;P&nbsp;R&nbsp;O&nbsp;D&nbsp;U&nbsp;C&nbsp;T</h2>
+            <!-- Swiper -->
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="img/boxBimg3.jpg" alt="First slide">
+                      <div class="slider_text">
+                        <h1>Various receiving</h1>
+                        <p>Hold the concept of the room together with a modern design hanger</p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="img/boxBimg1.jpg" data-src="" alt="Second slide">
+                      <div class="slider_text">
+                        <h1>Basic design</h1>
+                        <p>The most basic <br/>type of furniture is the best design.</p>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="img/boxBimg2.jpg" data-src="" alt="Third slide">
+                      <div class="slider_text">
+                        <h1>Classic choice</h1>
+                        <p>Mix classical and modern.<br/>You won't regret the choice.</p>
+                      </div>
+                  </div>
+                </div>
+                <!-- Add Pagination 
+                <div class="swiper-pagination"></div>-->
+              </div>
+
+                
+            <div id="mainA">
+                <div class="mainAimg"><p class="detail"><b>[대리석] 사이드 테이블</b><br/><span>240,000원</span></p><img src="img/0110110000743.jpg"></div>
+                <div class="mainAimg"><p class="detail"><b>[월넛] 2인 런너테이블</b><br/><span>210,000원</span></p><img src="img/0110110000433.jpg"></div>
+                <div class="mainAimg"><p class="detail"><b>[우드] 솔리드우드 체어</b><br/><span>160,000원</span></p><img src="img/0110110000393.jpg"></div>
+                <div class="mainAimg"><p class="detail"><b>[패브릭] 1인 소파체어</b><br/><span>360,000원</span></p><img src="img/0110110000223.jpg"></div>
+                <div class="mainAimg"><p class="detail"><b>[우드] 오픈선반 장식장</b><br/><span>220,000원</span></p><img src="img/0110090000053.jpg"></div>
+                <div class="mainAimg"><p class="detail"><b>[우드] 수납 사이드 테이블</b><br/><span>200,000원</span></p><img src="img/0110040000693.jpg"></div>
+            </div>
+           
+        </div>
+        <div class="boxC">
+             <h2>B&nbsp;E&nbsp;S&nbsp;T&nbsp; &nbsp;I&nbsp;T&nbsp;E&nbsp;M</h2>
+             <div id="mainB">
+               <div class="prd-list">
+                   <div class="listItem ">
+                        <ul class="prdList column4">
+                        <li class="item" >
+                        <div class="box">
+                        <a href="#"><img src="img/0110110000373.jpg" class="MS_prod_img_s thumb" /></a>
+                        <div class="status"><div class="icon"><span class='MK-product-icons'></span></div></div>
+                        <p class="prd-subname">WOOD SLAB</p>
+                        <p class="name">
+                        <a href="#">[다량입하/할인] 우드슬랩 테이블 </a>
+                        </p>
+                        <ul class="xans-product-listitem">
+                        <li class="price">가격문의</li>                                                   
+                        </ul>
+                        </div><!--box-->
+                        </li>
+                        <li class="item" >
+                        <div class="box">
+                        <a href="#"><img src="img/0110110000773.gif" class="MS_prod_img_s thumb" /></a>
+                        <div class="status"><div class="icon"><span class='MK-product-icons'></span></div></div>
+                        <p class="prd-subname">RILEY SERIES</p>
+                        <p class="name">
+                        <a href="#">[라일리] 가죽 4인용소파 </a>
+                        </p>
+                        <ul class="xans-product-listitem">
+                        <li class="price"><span>2,600,000원</span></li>
+                        </ul>
+                        </div><!--box-->
+                        </li>
+                        <li class="item" >
+                        <div class="box">
+                        <a href="#"><img src="img/0110110000503.jpg" class="MS_prod_img_s thumb" /></a>
+                        <div class="status"><div class="icon"><span class='MK-product-icons'></span></div></div>
+                        <p class="prd-subname">ROBE SERIES</p>
+                        <p class="name">
+                        <a href="#">[로브] 6인용식탁/테이블 세트 </a>
+                        </p>
+                        <ul class="xans-product-listitem">
+                        <li class="price"><span>2,940,000원</span></li>
+                        </ul>
+                        </div><!--box-->
+                        </li>
+                        <li class="item" >
+                        <div class="box">
+                        <a href="#"><img src="img/0110030000353.jpg" class="MS_prod_img_s thumb" /></a>
+                        <div class="status"><div class="icon"><span class='MK-product-icons'></span></div></div>
+                        <p class="prd-subname">ADEL SERIES</p>
+                        <p class="name">
+                        <a href="#">[아델] 책장3X2 </a>
+                        </p>
+                        <ul class="xans-product-listitem">
+                        <li class="price"><span>430,000원</span></li>
+                        </ul>
+                        </div><!--box-->
+                        </li>
+                        <li class="item" >
+                        <div class="box">
+                        <a href="#"><img src="img/0110040001173.jpg" class="MS_prod_img_s thumb" /></a>
+                        <div class="status"><div class="icon"><span class='MK-product-icons'></span></div></div>
+                        <p class="prd-subname">BLACK RUBBER SERIES</p>
+                        <p class="name">
+                        <a href="#">[블랙러버] A형 전신거울 </a>
+                        </p>
+                        <ul class="xans-product-listitem">
+                        <li class="price"><span>750,000원</span></li>
+                        </ul>
+                        </div><!--box-->
+                        </li>                        
+                        <li class="item" >
+                        <div class="box">
+                        <a href="#"><img src="img/0110040001043.jpg" class="MS_prod_img_s thumb" /></a>
+                        <div class="status"><div class="icon"><span class='MK-product-icons'></span></div></div>
+                        <p class="prd-subname">BLACK RUBBER SERIES</p>
+                        <p class="name">
+                        <a href="#">[블랙러버] D형 식탁/테이블 세트 </a>
+                        </p>
+                        <ul class="xans-product-listitem">
+                        <li class="price"><span>2,350,000원</span></li>
+                        </ul>
+                        </div><!--box-->
+                        </li>
+                        <li class="item" >
+                        <div class="box">
+                        <a href="#"><img src="img/0110020000423.gif" class="MS_prod_img_s thumb" /></a>
+                        <div class="status"><div class="icon"><span class='MK-product-icons'></span></div></div>
+                        <p class="prd-subname">OAK SERIES</p>
+                        <p class="name">
+                        <a href="#">[오크] A형 3단서랍장 </a>
+                        </p>
+                        <ul class="xans-product-listitem">
+                        <li class="price"><span>1,230,000원</span></li>
+                        </ul>
+                        </div><!--box-->
+                        </li>
+                        <li class="item" >
+                        <div class="box">
+                        <a href="#"><img src="img/0110090000023.jpg" class="MS_prod_img_s thumb" /></a>
+                        <div class="status"><div class="icon"><span class='MK-product-icons'></span></div></div>
+                        <p class="prd-subname">CASA SERIES</p>
+                        <p class="name">
+                        <a href="#">[까사] A형 거실장 </a>
+                        </p>
+                        <ul class="xans-product-listitem">
+                        <li class="price"><span>550,000원</span></li>
+                        </ul>
+                        </div><!--box-->
+                        </li>
+                        <li class="item" >
+                        <div class="box">
+                        <a href="#"><img src="img/0110070000393.gif" class="MS_prod_img_s thumb" /></a>
+                        <div class="status"><div class="icon"><span class='MK-product-icons'></span></div></div>
+                        <p class="prd-subname">A'SOME MELLO SERIES</p>
+                        <p class="name">
+                        <a href="#">[어썸멜로] B형 장식장 </a>
+                        </p>
+                        <ul class="xans-product-listitem">
+                        <li class="price"><span>1,200,000원</span></li>
+                        </ul>
+                        </div><!--box-->
+                        </li>
+                        <li class="item" >
+                        <div class="box">
+                        <a href="#"><img src="img/0110030000253.jpg" class="MS_prod_img_s thumb" /></a>
+                        <div class="status"><div class="icon"><span class='MK-product-icons'></span></div></div>
+                        <p class="prd-subname">ADEL SERIES</p>
+                        <p class="name">
+                        <a href="#">[아델] A형 행거수납장 </a>
+                        </p>
+                        <ul class="xans-product-listitem">
+                        <li class="price"><span>600,000원</span></li>
+                        </ul>
+                        </div><!--box-->
+                        </li>
+                        <li class="item" >
+                        <div class="box">
+                        <a href="#"><img src="img/0110020000383.jpg" class="MS_prod_img_s thumb" /></a>
+                        <div class="status"><div class="icon"><span class='MK-product-icons'></span></div></div>
+                        <p class="prd-subname">OAK SERIES</p>
+                        <p class="name">
+                        <a href="#">[오크] A형 실버철재수납장 </a>
+                        </p>
+                        <ul class="xans-product-listitem">
+                        <li class="price"><span>1,780,000원</span></li>
+                        </ul>
+                        </div><!--box-->
+                        </li>
+                        <li class="item" >
+                        <div class="box">
+                        <a href="#"><img src="img/0110040000853.gif" class="MS_prod_img_s thumb" /></a>
+                        <div class="status"><div class="icon"><span class='MK-product-icons'></span></div></div>
+                        <p class="prd-subname">BLACK RUBBER SERIES</p>
+                        <p class="name">
+                        <a href="#">[블랙러버] 책장3X5 </a>
+                        </p>
+                        <ul class="xans-product-listitem">
+                        <li class="price"><span>1,200,000원</span></li>
+                        </ul>
+                        </div><!--box-->
+                        </li>
+                        </ul>
+                    </div><!--listItem-->
+               </div><!--prd_list-->
+                 
+             </div><!--mainB-->
+        </div><!--boxC-->
+        
+        <div class="boxD">
+            <div id="mainC">
+                <img src="img/Untitled-1.gif" />        
+            </div>
+        </div>
+    </section>
+    
+	<!-- 푸터영역 -->
+	<footer id="footer">
+	<div class="inner_footer">
+		
+		<div class="info">
+			<div class="box_1">
+                <p>Adress : 경기도 오목로35번길</p>
+                <p>Redesign : casamia</p>
+			</div>
+			<div class="box_2">
+				<p>TEL : 010-9536-9829</p>
+				<p>홈페이지주소 : <a href="http://jeeyeon9.com" target="_blank">jeeyeon9.com</a></p>
+			</div>
+			<p class="copyright">
+				Copyright ⓒ 2018 Gu Jeeyeon portfolio
+			</p>
+		</div>
+	</div>
+</footer>
+
+
+</article>
+
+
+    
+<script>
+     $(function(){
+        $('#innerback').css('display','none');
+        $('#gnb').on({
+         mouseenter:function(){
+            $('#innerback',this).slideDown(); 
+        },
+         mouseleave:function(){
+            $('#innerback',this).slideUp();
+        }
+    });    
+     });
+    
+</script>
+    
+<!-- Initialize Swiper 슬라이드이미지-->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+    });
+</script>
+   
+<!--마우스가 올라가면 제품정보가 나타난다-->
+<script>
+    $(function(){
+        $(".detail").css('display','none');
+	       $(".mainAimg").on({
+                mouseenter:function(){
+                $(".detail",this).fadeIn();
+                },
+                mouseleave:function(){
+                $(".detail",this).fadeOut();
+                }
+            });  
+    }); 
+</script>
+
+<!--메인 이미지 슬라이더 제이쿼리-->
+<script>
+$('#slider').vmcSlider({
+		width: 1968,
+		height: 800,
+		gridCol: 10,
+		gridRow: 5,
+		gridVertical: 20,
+		gridHorizontal: 10,
+		autoPlay: true,
+		ascending: true,
+		effects: [
+			'blindsLeft', 'blindsRight', 'blindsTop', 'blindsBottom', 'blindsTopLeft', 'blindsBottomRight',
+			'curtainLeft', 'curtainRight', 'interlaceLeft', 'interlaceRight', 'mosaic', 'bomb', 'fumes'
+		],
+		ie6Tidy: false,
+		random: true,
+		duration: 3000,
+		speed: 900
+	});
+</script>
+</body>
+</html>
